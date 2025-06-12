@@ -1,0 +1,41 @@
+# Terraform files
+*.tfstate
+*.tfstate.backup
+.terraform/
+crash.log
+
+# AWS credentials (just in case)
+*.pem
+
+# Docker system files
+**/.DS_Store
+**/docker-compose.override.yml
+
+# Python cache (if applicable)
+__pycache__/
+*.pyc
+
+# AWS CLI temp
+.aws/
+
+# Cloud9 temp and log files
+*.log
+
+# Node modules (if you ever use NodeJS)
+node_modules/
+
+# Ignore build artifacts
+build/
+dist/
+
+# Ignore IDE config files
+.vscode/
+.idea/
+*.code-workspace
+
+# Ignore coverage reports
+coverage/
+
+# GitHub Actions runner files (just in case)
+.github/workflows/*.log
+
