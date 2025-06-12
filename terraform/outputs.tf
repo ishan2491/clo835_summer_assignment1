@@ -3,7 +3,7 @@ output "ec2_public_ip" {
 }
 
 output "ssh_command" {
-  value = "ssh -i ~/.ssh/clo835-key ec2-user@${aws_instance.web_server.public_ip}"
+  value = "ssh -i ~/.ssh/clo835-assignment1-key ec2-user@${aws_instance.web_server.public_ip}"
 }
 
 output "webapp_ecr_url" {

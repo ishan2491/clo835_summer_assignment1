@@ -47,10 +47,12 @@ resource "aws_security_group" "ec2_sg" {
 
 resource "aws_ecr_repository" "webapp" {
   name = "clo835-webapp"
+  force_delete = true
 }
 
 resource "aws_ecr_repository" "mysql" {
   name = "clo835-mysql"
+  force_delete = true
 }
 
 data "aws_ami" "amazon_linux" {
